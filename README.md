@@ -4,8 +4,23 @@
 
 ## Example code
 
-> Noted that you need to have a **token** for accessing **KKBOX Open API** to run the example code.
-> If you don't know what this is, check out the article [Beginner's guide for Python developers](https://docs-en.kkbox.codes/docs/beginners-guide-for-python-developers).
+### KKBOX Open API Token
+
+Noted that you need to have a **token** for accessing **KKBOX Open API** to run the example code.
+If you don't know what this is, check out the article [Beginner's guide for Python developers](https://docs-en.kkbox.codes/docs/beginners-guide-for-python-developers).
+
+Nevertheless, if you don't want to read the whold article, follow these steps to retrive the token:
+
+1. Go to [My Apps](https://developer.kkbox.com/#/app), register and create an app. You should see a page that has **ID** and **Secret**.
+2. use the [`get_token.py`](./get_token.py), provides your **ID** and **Secret** as the command-line arguments to fetch the token. For example if your ID is `ffc7bfde578dcf76185d6695da165512` and Secret is `99c08eff076587acee496a01c5d8a66e`:
+```
+$ python3 get_token.py ffc7bfde578dcf76185d6695da165512 99c08eff076587acee496a01c5d8a66e
+```
+3. There should be a base64 encoded string printed on the screen. That is your token.
+```
+$ python3 get_token.py ffc7bfde578dcf76185d6695da165512 99c08eff076587acee496a01c5d8a66e
+tGm6Nizi6zRd/kmBhgCXwg==  <- This is your token
+```
 
 ### pipenv
 
